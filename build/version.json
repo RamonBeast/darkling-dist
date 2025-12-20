@@ -1,10 +1,10 @@
 {
-  "version": 2025121801,
+  "version": 2025121802,
   "320x240": {
-    "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.1/build/darkling_320x240.bin"
+    "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.2/build/darkling_320x240.bin"
   },
   "480x320": {
-    "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.1/build/darkling_480x320.bin"
+    "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.2/build/darkling_480x320.bin"
   },
-  "description": "Initial Firmware"
+  "description": "Added OTA update support"
 }
