@@ -1,17 +1,17 @@
 {
-  "version": 2025123101,
+  "version": 2025122701,
   "boards": {
     "esp32_st7796_spi": {
       "mcu": "ESP32",
       "interface": "SPI",
       "resolution": "480x320",
-      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.2/build/darkling_esp32_st7796_spi.bin"
+      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.3/build/darkling_esp32_st7796_spi.bin"
     },
     "esp32_st7789_spi": {
       "mcu": "ESP32",
       "interface": "SPI",
       "resolution": "320x240",
-      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.2/build/darkling_esp32_st7789_spi.bin"
+      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.3/build/darkling_esp32_st7789_spi.bin"
     }
   },
   "description": "Board-based firmware selection support"
