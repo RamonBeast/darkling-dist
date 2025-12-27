@@ -11,7 +11,7 @@
       "mcu": "ESP32",
       "interface": "SPI",
       "resolution": "320x240",
-      "url": "https://darkling-proxy.strongdown.workers.dev/raw/RamonBeast/v0.0.5/build/darkling_esp32_st7789_spi.bin"
+      "url": "https://darkling-proxy.strongdown.workers.dev/raw/RamonBeast/darkling-dist/v0.0.5/build/darkling_esp32_st7789_spi.bin"
     }
   },
   "description": "Board-based firmware selection support"
