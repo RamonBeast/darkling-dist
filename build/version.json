@@ -1,18 +1,18 @@
 {
-  "version": 2025122802,
+  "version": 2025122901,
   "boards": {
     "esp32_st7796_spi": {
       "mcu": "ESP32",
       "interface": "SPI",
       "resolution": "480x320",
-      "url": "https://darkling-proxy.strongdown.workers.dev/raw/RamonBeast/darkling-dist/v0.0.8/build/darkling_esp32_st7796_spi.bin"
+      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.9/build/darkling_esp32_st7796_spi.bin"
     },
     "esp32_st7789_spi": {
       "mcu": "ESP32",
       "interface": "SPI",
       "resolution": "320x240",
-      "url": "https://darkling-proxy.strongdown.workers.dev/raw/RamonBeast/darkling-dist/v0.0.8/build/darkling_esp32_st7789_spi.bin"
+      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.9/build/darkling_esp32_st7789_spi.bin"
     }
   },
-  "description": "Board-based firmware selection support"
+  "description": "Release Update"
 }
