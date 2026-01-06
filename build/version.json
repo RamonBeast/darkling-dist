@@ -1,5 +1,5 @@
 {
-  "version": 2026010601,
+  "version": 2026010602,
   "boards": {
     "esp32_st7796_spi": {
       "mcu": "ESP32",
