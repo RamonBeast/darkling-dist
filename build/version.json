@@ -1,17 +1,23 @@
 {
-  "version": 2026010603,
+  "version": 2026011501,
   "boards": {
     "esp32_st7796_spi": {
       "mcu": "ESP32",
       "interface": "SPI",
       "resolution": "480x320",
-      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.2.1/build/darkling_esp32_st7796_spi.bin"
+      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.2/build/darkling_esp32_st7796_spi.bin"
+    },
+    "esp32_st7796fy_spi": {
+      "mcu": "ESP32",
+      "interface": "SPI",
+      "resolution": "480x320",
+      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.3.0/build/darkling_esp32_st7796fy_spi.bin"
     },
     "esp32_st7789_spi": {
       "mcu": "ESP32",
       "interface": "SPI",
       "resolution": "320x240",
-      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.2.1/build/darkling_esp32_st7789_spi.bin"
+      "url": "https://raw.githubusercontent.com/RamonBeast/darkling-dist/v0.0.2/build/darkling_esp32_st7789_spi.bin"
     }
   },
   "description": "Release Update"

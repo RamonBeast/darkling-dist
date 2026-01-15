@@ -1,3 +1,76 @@
+# Darkling v0.3.0 Release Notes
+
+  *January 15, 2026*
+
+  ## Summary
+
+  This release introduces the migration system, letting you travel to new star systems. It also adds broadcasts, deep space telemetry, LED notifications, power saving mode, and numerous quality-of-life improvements.
+
+  ### Migration System
+
+  - **Travel to new stars**: Migrate your civilization to any neighboring star visible in Astronomy view
+  - **Migration costs**: Requires resources to initiate (cost varies by distance and number of Colonies)
+  - **Bounce mechanics**: If your destination is occupied when you arrive, you may bounce to a nearby system after a battle on arrival
+
+  ### Broadcast System
+
+  - **Share star coordinates**: Send the location of any star you've discovered to other players
+  - **Two broadcast targets**:
+    - *To Galaxy*: Broadcast to all players in the universe
+    - *To Contact*: Send privately to a specific player from your contacts list
+  - **Galaxy broadcast modes**:
+    - *Public*: Your identity **is revealed** to all recipients
+    - *Anonymous*: Recipients see the coordinates but **not who sent them**
+  - **Contact broadcast**: Send coordinates directly to one player
+  - **Strategic uses**:
+    - Reveal your own star to invite contact (public broadcast of your location)
+    - Share intel about other players' positions
+    - Send *anonymous* tips without exposing yourself
+  - **Creates contacts**: When you receive a broadcast, the star is added to your contacts for easy reference
+
+  ### LED Notifications
+
+  - **Event-based LED alerts**: LED blinks to notify you of important events
+    - Probe results and detections
+    - Research completions
+    - Migration arrivals
+    - Incoming broadcasts
+
+  ### Power Save Mode
+
+  - **Auto screen-off**: Display turns off after a period of inactivity
+  - **Touch to wake**: Tap the screen to resume
+
+  ### WiFi Improvements
+
+  - **Network scanning**: See available WiFi networks when connecting
+  - **Automatic timezone**: Device detects your timezone automatically via WiFi
+  - **Better reconnection**: Fixed exponential backoff for more reliable server reconnection
+
+  ### Contacts
+
+  - **Contacts panel**: Added new *Contacts* panel
+    - Broadcast targets appear as contacts
+    - Player-to-Player broadcast appear as contacts
+    - Confirmed Probe discoveries are automatically add to *Contacts*
+  - **Relationship-aware labels**: Contact sources now show meaningful context:
+    - "Revealed their coordinates" - player introduced themselves
+    - "Via [name]" - coordinates forwarded by another player
+    - "Anonymous signal" - anonymous broadcast
+    - "Detected by probe" - confirmed by your probe
+
+  ### Bug Fixes
+
+  - Fixed astronomy pagination getting out of sync when rapidly navigating
+  - Fixed MQTT reconnection causing stack overflow under poor network conditions
+  - Fixed WiFi icon changing during network scans while already connected
+  - Fixed journal entry text getting clipped
+  - Fixed research feedback not displaying correctly
+  - Improved toast notification delivery when UI is busy
+  - Added support for additional hardware variants (Boya flash chips, inverted touch panels)
+
+  ---
+
 # Darkling v0.2.0 Release Notes
 
 *January 6, 2026*
@@ -74,6 +147,8 @@ This release focuses on **multiplay**, **security and convenience**, adding encr
 - **Cleaner interface** - Reduced unnecessary debug messages for a smoother experience
 - **Factory reset** - Hold "boot" button down for 3 seconds to restore to factory settings (wifi data is erased, calibration data is erased, player data *is retained*)
 
+---
+
 # Darkling v0.0.9 Release Notes
 
 *December 29, 2025*
@@ -124,4 +199,3 @@ This release focuses on **multiplay**, **security and convenience**, adding encr
 - Enhanced error handling and recovery
 - Better game state synchronization
 - Optimized network communication
-
