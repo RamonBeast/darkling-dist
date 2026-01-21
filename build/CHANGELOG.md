@@ -1,3 +1,39 @@
+# Darkling v0.3.3 Release Notes
+
+*January 21, 2026*
+
+## Summary
+
+This release adds battery monitoring, a web-based status page, balance adjustments, and support for a new 5" display.
+
+### Battery Monitoring
+
+- **Battery indicator**: Device now supports batteries (LiPo 3.7v with JST 1.25mm 2pin connectors), it shows battery level and charging status
+- **Low battery warnings**: Get notified when battery is running low
+
+### Web Status Page
+
+- **View your status online**: Access your civilization's status from any browser, from the info page ("?" button) you can access the "Token", your personalized page is available at: https://godark.cc/status/<token>
+
+### Balance Adjustments
+
+- **Research costs rebalanced**: Adjusted costs for various research options: Astronomy, Espionage, Dark Veil and Counter Espionage
+
+### New Hardware Support
+
+- **5" RGB Display**: Added support for ESP32-S3 8048S050 (800x480 RGB panel)
+- **Adaptive UI**: Interface now scales properly across different screen sizes
+
+### Bug Fixes
+
+- Fixed migration panel not updating correctly after initiating travel
+- Fixed memory leaks in time manager
+- Improved memory usage and stability
+- Improved handling of WiFi reconnections
+- Improved SNTP synchronization time at boot
+
+---
+
 # Darkling v0.3.0 Release Notes
 
   *January 15, 2026*
