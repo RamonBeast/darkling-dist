@@ -6,7 +6,7 @@ This release introduces combat and counter-intelligence mechanics: scouts for ar
 
 ### Manual
 - **Game manual**: Now available at https://godark.cc/manual.html
-- **Personal page**: Available to all players at https://godark.cc/status/<your-token> (accessible from the "?" menu)
+- **Personal page**: Available to all players at https://godark.cc/status/your-token (accessible from the "?" menu)
 
 ### Scout System
 
