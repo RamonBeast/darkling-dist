@@ -1,3 +1,57 @@
+# Darkling v0.4.0 Release Notes                                                                                                
+*February 6, 2026*
+
+## Summary                                                                                                                           
+This release introduces combat and counter-intelligence mechanics: scouts for area reconnaissance, decoys for counter-espionage, player death, and a redesigned star map with inline action buttons.
+
+### Manual
+- **Game manual**: Now available at https://godark.cc/manual.html
+- **Personal page**: Available to all players at https://godark.cc/status/<your-token> (accessible from the "?" menu)
+
+### Scout System
+
+- **Area reconnaissance**: Send a scout to a star to probe all its neighboring stars **at once**
+- **Requires research**: Scouts require *Astronomy II* and *Espionage* research
+- **Scout tracking**: View active scout status and receive notifications on completion
+- **Journal integration**: Scout launches and results are logged in the journal
+
+### Decoy System
+
+- **Counter-espionage decoys**: Deploy decoys to stars to mislead enemy probes
+- **Decoy status tracking**: View active and in-transit decoys from the contacts/intelligence panel
+- **Status indicators**: Star map shows decoy active/in-transit status on each star
+- **Requires research**: Decoys require *Counter Espionage* research
+
+### Player Death
+
+- **Death screen**: When your civilization loses all colonies, a death screen displays your final stats — survival time, resources
+gathered, and cause of death
+- **Fresh start**: "Begin Anew" button resets your device for a new registration
+
+### Star Map Redesign
+
+- **Inline action buttons**: Star map items now show direct action buttons (probe, decoy, scout, broadcast, migrate) instead of
+clickable rows
+- **Confirmation dialogs**: All actions (probe, decoy, scout, migration) now show a confirmation message before executing
+- **Probe from contacts**: Launch probes directly from contact items (requires *Espionage I*)
+- **Migrate icon**: Migration action now uses a rocket icon instead of a text button
+
+### Lore
+
+- **Updated lore text**: New lore content added to the guide section
+
+### Bug Fixes
+
+- Fixed LVGL heap exhaustion when opening dialogs on the star map — list objects are now freed before dialogs open, reclaiming ~13KB
+- Fixed Timer Service stack overflow in deferred starmap refresh
+- Fixed premature scout toast firing before server confirmation
+- Fixed journal entries appearing blank for scout, probe result, and research complete events
+- Fixed decoys not appearing in contacts panel on first open
+- Fixed decoys incorrectly showing up in the broadcast recipient picker
+- Increased LVGL task stack size from 62KB to 72KB for improved stability
+
+---
+
 # Darkling v0.3.3 Release Notes
 
 *January 21, 2026*
