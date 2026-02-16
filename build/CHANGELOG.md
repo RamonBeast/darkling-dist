@@ -1,3 +1,75 @@
+# Darkling v0.5.0 Release Notes
+*February 16, 2026*
+
+## Summary
+This release introduces two major combat systems -- Sophons for persistent surveillance and Photoids for dark forest strikes -- along with suspected contacts, travel time estimates, death telemetry, and numerous UI and stability improvements.
+
+### Sophon System
+
+- **Persistent surveillance probes**: Deploy a Sophon to a star for continuous intelligence gathering
+- **Requires research**: Sophons require *Counter Espionage III* research
+- **Detailed intel reports**: View target's colonies, resources, dark veil, signal level, research branches, and active assets
+- **Sophon management**: Deploy, redirect, or recall your Sophon from the dedicated panel
+- **Footer button with badge**: Quick access to Sophon status from the footer bar, with notification badge on new intel
+- **Warning dialog**: Sophon detects incoming threats and displays warnings
+- **Journal integration**: Sophon events logged in the journal
+- **Contacts integration**: Deploy Sophons directly from the contacts panel
+
+### Photoid System (Dark Forest Strike)
+
+- **Anonymous ranged attacks**: Launch a Photoid strike at any known star coordinates
+- **Requires research**: Photoids require *Weapons I* research
+- **Signal lock mechanic**: Strike effectiveness scales with target's signal level -- low signal targets may evade damage entirely
+- **Damage effects**: Destroys colonies, erodes dark veil, and drains resources on impact
+- **Warning system**: Warn a target of incoming danger (reveals your coordinates, creates a contact)
+- **Attack alerts**: Receive visual alerts when your star is struck by a Photoid
+- **Strike confirmation**: Sophon observers receive hit confirmation when a Photoid lands
+- **Signal spike**: Launching a Photoid temporarily increases your signal, exposing you to detection
+- **Cooldown**: 24-hour cooldown between Photoid launches
+- **Journal integration**: Photoid launches, hits, and warnings logged in the journal
+
+### Suspected Contacts
+
+- **Automatic contact creation**: Strong probe results now create temporary contacts with amber color indicator
+- **Expiry countdown**: Suspected contacts expire after 48 hours, with a visible countdown timer
+- **Upgrade path**: Re-probing a suspected contact with confirmed detection upgrades it to a permanent contact
+
+### Travel Time Estimates
+
+- **Contact list travel times**: Each contact now displays the estimated travel time from your current star
+- **Confirmation dialog ETAs**: Probe, Sophon, and migration confirmation dialogs show travel time before you commit
+- **Server-provided times**: Travel times are computed server-side using galaxy shortest paths for accuracy
+
+### Death Telemetry
+
+- **Civilization lost broadcasts**: When a civilization is destroyed, all players receive a delayed telemetry broadcast announcing the loss
+- **Journal event**: Civilization lost events appear in the journal
+
+### Lore
+
+- **Updated lore text**: New lore content for Sophons and Photoids added to the guide section
+
+### UI Improvements
+
+- **Redesigned footer order**: Navigation reordered to Astronomy, Research, Broadcasts, Sophons, Journal, Lore
+- **Taller contact items**: Contact list items are now taller for better readability
+- **Dialog text wrapping**: Improved text wrapping in confirmation dialogs
+- **Scout text wrapping**: Scout status text now wraps to multiple lines instead of overflowing
+
+### Bug Fixes
+
+- Fixed WiFi not reconnecting on boot due to transient handshake timeouts
+- Fixed WiFi dialog edge cases: timer leak, thread safety, and auto-scan issues
+- Fixed Sophon button not enabling after Counter Espionage III research is granted
+- Fixed confirmation dialogs rendering behind the contacts overlay
+- Fixed broadcast dialog layering issues when opened from contacts
+- Fixed contacts dialog hang and Sophon redirect edge cases
+- Fixed toast icon rendering with incorrect fonts
+- Fixed decoys sent to a populated star now correctly increase the signal on that star
+- Factory reset now also removes player credentials for a true fresh start
+
+---
+
 # Darkling v0.4.0 Release Notes                                                                                                
 *February 6, 2026*
 
